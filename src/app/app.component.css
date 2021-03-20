@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.todos {
+    background-color: #fff;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1 {
+    color: rgb(204, 12, 165);
+    font-family: 'Montserrat', sans-serif;
+}

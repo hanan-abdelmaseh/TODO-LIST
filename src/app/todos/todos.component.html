@@ -1,0 +1,24 @@
+<div class="container">
+    <form (ngSubmit)="add()">
+        <input class="form-control" type="text" placeholder="add todo" [(ngModel)]="todoInput" name="todoInput">
+        <div class="d-flex justify-content-center mt-3">
+            <input type="submit" class=" btn submitBtn mb-3" vlaue="add">
+        </div>
+    </form>
+
+
+
+    <div *ngFor=" let todo of todos ; let i = index" class="todo mb-3 {{(todo.completed? 'done':'')}}">
+        <div class="row ">
+            <div class="col-md-1  ">
+                <div class="index pl-1">{{i}}-</div>
+            </div>
+            <div class="col-md-8 ">
+                <div class="content" (click)="toggleTodo(i)">{{todo.content}}</div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-end">
+                <button class="btn remove " (click)="remove(i)">remove</button>
+            </div>
+        </div>
+    </div>
+</div>

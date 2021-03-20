@@ -1,0 +1,22 @@
+.container {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.todo.done .content {
+    text-decoration: line-through;
+}
+
+.submitBtn {
+    background-color: rgb(204, 12, 165);
+}
+
+.todo {
+    border: 1px solid rgb(211, 210, 210);
+    border-radius: 0.7rem;
+}
+
+.remove {
+    background-color: rgb(234, 18, 101);
+    color: #fff !important;
+    border-radius: 0.7rem !important;
+}
